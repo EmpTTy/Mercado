@@ -14,7 +14,7 @@ $(function () {
     }
     alert(`Bem-vindo, ${user.nome}!`);
     localStorage.setItem('loggedInUser', JSON.stringify(user));
-    window.location.href = '../html/mercado.html';
+    window.location.href = '/Mercado/html/mercado.html';
   });
 
   $('.toggle-password').on('click', function () {
