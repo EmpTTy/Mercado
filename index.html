@@ -1,0 +1,47 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <title>Login Mercadinho</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Entrar</h1>
+
+      <div id="msgErrorLogin" class="message error"></div>
+
+      <div class="label-float">
+        <input type="text" id="usuarioLogin" required />
+        <label for="usuarioLogin">Usuário</label>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="senhaLogin" required minlength="6" />
+        <label for="senhaLogin">Senha</label>
+        <i class="fa fa-eye toggle-password" toggle="#senhaLogin"></i>
+      </div>
+
+      <div class="justify-center">
+        <button id="btnLogin">Entrar</button>
+      </div>
+
+      <div class="justify-center">
+        <hr />
+      </div>
+
+      <p>
+        Não tem uma conta?
+        <a href="./html/cadastro.html">Cadastre-se</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

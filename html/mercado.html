@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercadinho</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">Mercado Paga&Rala</div>
+    <nav>
+      <a href="#" id="link-catalog">Catálogo</a>
+      <a href="#" id="link-cart">Carrinho (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CATÁLOGO -->
+    <section id="catalog">
+      <h2>Catálogo de Produtos</h2>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <!-- CARRINHO -->
+    <section id="cart" class="hidden">
+      <h2>Seu Carrinho</h2>
+      <div id="cart-items"></div>
+      <p><strong>Total: R$ <span id="cart-total">0.00</span></strong></p>
+      <button id="checkout-btn" disabled>Finalizar Compra</button>
+    </section>
+
+    <!-- CHECKOUT -->
+    <section id="checkout" class="hidden">
+      <h2>Checkout</h2>
+      <form id="checkout-form">
+        <input type="text" id="nome" placeholder="Nome completo" required />
+        <textarea id="endereco" placeholder="Endereço para entrega" required></textarea>
+        <select id="pagamento">
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="boleto">Boleto</option>
+        </select>
+        <button type="submit">Confirmar Pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../js/mercado.js"></script>
+</body>
+
+</html>

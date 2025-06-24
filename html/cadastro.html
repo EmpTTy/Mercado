@@ -1,0 +1,52 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <title>Cadastro Mercadinho</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+
+            <div id="msgErrorCad" class="message error"></div>
+            <div id="msgSuccessCad" class="message success"></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" required />
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="usuarioCad" required />
+                <label for="usuarioCad">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senhaCad" required minlength="6" />
+                <label for="senhaCad">Senha</label>
+                <i id="toggleSenha" class="fa fa-eye toggle-password" toggle="#senhaCad"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmSenha" required />
+                <label for="confirmSenha">Confirmar Senha</label>
+                <i id="toggleConfirm" class="fa fa-eye toggle-password" toggle="#confirmSenha"></i>
+            </div>
+
+            <div class="justify-center">
+                <button id="btnCad">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/cadastro.js"></script>
+</body>
+
+</html>

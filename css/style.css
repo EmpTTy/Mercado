@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #000000;
+    color: #f8f800;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #f8f800;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #f8f800;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8f800;
+}
+
+header nav a {
+    color: #f8f800;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #fff200;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff200;
+    border-left: 4px solid #f8f800;
+    padding-left: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/* Produto */
+.card {
+    background: #1a1a1a;
+    border: 2px solid #f8f800;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #f8f800;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(255, 255, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #000;
+    border-bottom: 1px solid #f8f800;
+}
+
+.card-content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card-content p.price {
+    font-size: 1.1rem;
+    color: #f8f800;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p.desc {
+    font-size: 0.9rem;
+    color: #cccc00;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.card-content button {
+    background: #f8f800;
+    color: #000;
+    border: none;
+    padding: 0.6rem;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.card-content button:hover {
+    background: #fff200;
+}
+
+#cart-items > div {
+    background: #111;
+    border: 1px solid #f8f800;
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #f8f800;
+}
+
+#cart-items img {
+    width: 60px;
+    margin-right: 1rem;
+    border-radius: 4px;
+    border: 1px solid #f8f800;
+}
+
+#cart-items span {
+    flex: 1;
+    font-weight: bold;
+}
+
+#cart-items input {
+    width: 60px;
+    border: 1px solid #f8f800;
+    border-radius: 4px;
+    padding: 0.4rem;
+    text-align: center;
+    background: #000;
+    color: #f8f800;
+}
+
+#cart-items button {
+    background: #f8f800;
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #000;
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+#checkout-btn {
+    background: #f8f800;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#checkout-btn:hover:enabled {
+    background: #fff200;
+}
+
+form {
+    background: #1a1a1a;
+    color: #f8f800;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #f8f800;
+}
+
+form input, form select,form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background: #000;
+    color: #f8f800;
+    border: 1px solid #f8f800;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #f8f800;
+    color: #000;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #fff200;
+}
